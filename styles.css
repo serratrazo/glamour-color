@@ -1,0 +1,195 @@
+/* Estilos generales */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #fff0f5;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+/* Encabezado */
+header {
+    background-color: #c71585;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Logo cuadrado */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-cuadrado {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;   /* recorta la imagen para encajar */
+    border-radius: 8px;  /* esquinas suaves */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.logo-cuadrado:hover {
+    transform: scale(1.05);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+/* Sección de proyectos */
+#proyectos {
+    padding: 40px;
+    text-align: center;
+}
+
+#proyectos h2 {
+    color: #c71585;
+    margin-bottom: 20px;
+}
+
+#proyectos article {
+    border: 2px solid #c71585;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#proyectos h3 {
+    color: #8b008b;
+    margin-bottom: 10px;
+}
+
+#proyectos img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+#proyectos a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #c71585;
+    font-weight: bold;
+}
+
+#proyectos a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de contacto */
+#contacto {
+    background-color: #ffe4e1;
+    padding: 40px;
+    text-align: center;
+}
+
+#contacto h2 {
+    color: #c71585;
+}
+
+#contacto form {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+#contacto label {
+    font-weight: bold;
+    color: #8b008b;
+}
+
+#contacto input, 
+#contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #c71585;
+    border-radius: 5px;
+}
+
+/* Validaciones mínimas */
+#contacto input:invalid, 
+#contacto textarea:invalid {
+    border-color: red;
+}
+
+#contacto button {
+    background-color: #c71585;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#contacto button:hover {
+    background-color: #8b008b;
+}
+
+/* Pie de página */
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Íconos de redes sociales */
+footer a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+footer a img:hover {
+    transform: scale(1.2);
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .logo-cuadrado {
+        width: 150px;
+        height: 150px;
+    }
+
+    #proyectos article {
+        max-width: 90%;
+    }
+
+    #contacto form {
+        max-width: 90%;
+    }
+
+    footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
